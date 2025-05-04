@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    
+    <div class="flex min-h-screen items-center justify-center bg-white p-10">
+        <div class="bg-green-400 rounded-md shadow-lg w-full max-w-2xl">
+          <div>
+            <p class="w-full text-lg font-semibold text-white text-center p-3">
+              Register Yourself
+            </p>
+          </div>
+          <div class="px-6 pb-6">
+            <form class="space-y-6">
+              <!-- First and Last Name -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label for="firstName" class="block text-white font-medium text-sm mb-1">First Name</label>
+                  <input
+                    id="firstName"
+                    type="text"
+                    class="w-full bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring focus:border-green-500"
+                  />
+                </div>
+                <div>
+                  <label for="lastName" class="block text-white font-medium text-sm mb-1">Last Name</label>
+                  <input
+                    id="lastName"
+                    type="text"
+                    class="w-full bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring focus:border-green-500"
+                  />
+                </div>
+              </div>
+      
+              <!-- Username -->
+              <div>
+                <label for="username" class="block text-white font-medium text-sm mb-1">Username</label>
+                <input
+                  id="username"
+                  type="text"
+                  class="w-full bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring focus:border-green-500"
+                />
+              </div>
+      
+              <!-- Email -->
+              <div>
+                <label for="email" class="block text-white font-medium text-sm mb-1">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  class="w-full bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring focus:border-green-500"
+                />
+              </div>
+      
+              <!-- Contact Number -->
+              <div>
+                <label for="contactNumber" class="block text-white font-medium text-sm mb-1">Contact Number</label>
+                <input
+                  id="contactNumber"
+                  type="tel"
+                  class="w-full bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring focus:border-green-500"
+                />
+              </div>
+      
+              <!-- Password -->
+              <div>
+                <label for="password1" class="block text-white font-medium text-sm mb-1">Password</label>
+                <input
+                  id="password1"
+                  type="password"
+                  class="w-full bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring focus:border-green-500"
+                />
+              </div>
+      
+              <!-- Confirm Password -->
+              <div>
+                <label for="password2" class="block text-white font-medium text-sm mb-1">Confirm Password</label>
+                <input
+                  id="password2"
+                  type="password"
+                  class="w-full bg-white rounded-lg px-3 py-2 focus:outline-none focus:ring focus:border-green-500"
+                />
+              </div>
+      
+              <!-- Submit Button -->
+              <div class="text-center pt-4">
+                <button type="submit" class="bg-white text-green-600 font-semibold px-6 py-2 rounded-lg shadow hover:bg-green-100 transition">
+                  Register
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+
+</body>
+</html>
