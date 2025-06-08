@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Themed Food Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-red-50 min-h-screen text-gray-800">
+
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 min-h-screen bg-white shadow-xl p-6 space-y-6">
+      <h2 class="text-2xl font-bold text-red-600">🍽️ Food Admin</h2>
+
+      <!-- Updated Button: Add Food -->
+      <button class="flex items-center gap-2 w-full bg-white text-red-600 border border-red-600 py-2 px-4 rounded-lg hover:bg-red-100 transition">
+        <span class="text-xl">➕</span>
+        <span class="font-semibold">Add Food</span>
+      </button>
+
+      <!-- Updated Button: Manage Category -->
+      <button class="flex items-center gap-2 w-full bg-white text-red-600 border border-red-600 py-2 px-4 rounded-lg hover:bg-red-100 transition">
+        <span class="text-xl">📂</span>
+        <span class="font-semibold">Manage Category</span>
+      </button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 bg-red-100">
+      <h1 class="text-3xl font-bold text-red-700 mb-6">Available Foods</h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Food Card 1 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?burger" alt="Burger" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900">Burger Deluxe</h3>
+            <p class="text-gray-600 mt-1">Juicy and cheesy classic burger.</p>
+            <p class="text-red-600 font-bold mt-2">$8.99</p>
+          </div>
+        </div>
+
+        <!-- Food Card 2 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?pizza" alt="Pizza" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900">Margherita Pizza</h3>
+            <p class="text-gray-600 mt-1">Cheesy and fresh with basil.</p>
+            <p class="text-red-600 font-bold mt-2">$10.99</p>
+          </div>
+        </div>
+
+        <!-- Food Card 3 -->
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-900">Creamy Alfredo</h3>
+            <p class="text-gray-600 mt-1">Rich and creamy pasta delight.</p>
+            <p class="text-red-600 font-bold mt-2">$12.50</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
