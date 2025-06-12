@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Description</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <!-- Optional: Customize Tailwind theme with red as default -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ef4444', // red-500
+            'primary-dark': '#dc2626' // red-600
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <div class="max-w-4xl mx-auto py-12 px-6 bg-white rounded-lg shadow-md">
+    <div class="flex flex-col md:flex-row gap-8">
+      
+      <!-- Image Section -->
+      <div class="md:w-1/2">
+        <img 
+          src="https://via.placeholder.com/500x500"     
+          alt="Product Image" 
+          class="w-full h-auto rounded-lg object-cover"
+        />
+      </div>
+
+      <!-- Content Section -->
+      <div class="md:w-1/2 flex flex-col justify-between">
+        <div>
+          <!-- Category -->
+          <p class="text-sm font-semibold text-red-600 uppercase">Electronics</p>
+          
+          <!-- Product Name -->
+          <h1 class="text-3xl font-bold mt-1 mb-4">Premium Wireless Headphones</h1>
+
+          <!-- Description -->
+          <p class="text-gray-600 mb-6">
+            Experience crystal clear sound with our premium over-ear wireless headphones. Featuring noise cancellation, 30-hour battery life, and sleek modern design.
+          </p>
+        </div>
+
+        <!-- Price and Button -->
+        <div class="mt-auto">
+          <p class="text-2xl font-semibold text-gray-900">$199.99</p>
+          <button class="mt-4 w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded transition duration-300">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
