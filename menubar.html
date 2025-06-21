@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toggle Category Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body class="bg-gray-100 p-6">
+
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-xl font-semibold mb-4">Select a Category:</h2>
+
+    <!-- Toggle Category List -->
+    <div class="flex flex-wrap gap-2 bg-white p-2 rounded-lg shadow-sm border border-gray-300">
+      <div class="flex items-center">
+        <input type="radio" id="all" name="category" class="peer hidden" checked />
+        <label for="all" class="
+          block px-4 py-2 text-sm font-medium text-gray-700 rounded-md cursor-pointer
+          peer-checked:bg-red-500 peer-checked:text-white
+          hover:bg-red-100 hover:text-red-600 
+          transition-colors
+        ">
+          All
+        </label>
+      </div>
+
+      <div class="flex items-center">
+        <input type="radio" id="technology" name="category" class="peer hidden" />
+        <label for="technology" class="
+          block px-4 py-2 text-sm font-medium text-gray-700 rounded-md cursor-pointer
+          peer-checked:bg-red-500 peer-checked:text-white
+          hover:bg-red-100 hover:text-red-600 
+          transition-colors
+        ">
+          Technology
+        </label>
+      </div>
+
+      <div class="flex items-center">
+        <input type="radio" id="design" name="category" class="peer hidden" />
+        <label for="design" class="
+          block px-4 py-2 text-sm font-medium text-gray-700 rounded-md cursor-pointer
+          peer-checked:bg-red-500 peer-checked:text-white
+          hover:bg-red-100 hover:text-red-600 
+          transition-colors
+        ">
+          Design
+        </label>
+      </div>
+
+      <div class="flex items-center">
+        <input type="radio" id="marketing" name="category" class="peer hidden" />
+        <label for="marketing" class="
+          block px-4 py-2 text-sm font-medium text-gray-700 rounded-md cursor-pointer
+          peer-checked:bg-red-500 peer-checked:text-white
+          hover:bg-red-100 hover:text-red-600 
+          transition-colors
+        ">
+          Marketing
+        </label>
+      </div>
+
+      <div class="flex items-center">
+        <input type="radio" id="business" name="category" class="peer hidden" />
+        <label for="business" class="
+          block px-4 py-2 text-sm font-medium text-gray-700 rounded-md cursor-pointer
+          peer-checked:bg-red-500 peer-checked:text-white
+          hover:bg-red-100 hover:text-red-600 
+          transition-colors
+        ">
+          Business
+        </label>
+      </div>
+    </div>
+
+    <p class="mt-4 text-gray-600 text-sm">
+      Click on a category to select it. Only one can be active at a time.
+    </p>
+  </div>
+
+</body>
+</html>
