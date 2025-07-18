@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Modern Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-gray-50 text-gray-800 min-h-screen flex items-center justify-center p-4"
+  >
+    <div class="w-full max-w-4xl">
+      <div class="text-center mb-10">
+        <h1 id="main-heading" class="text-4xl font-bold text-gray-800 mb-2">
+          Create Your Account
+        </h1>
+        <p id="sub-heading" class="text-gray-600 max-w-md mx-auto">
+          Join our community and start your journey with us today
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div class="md:flex">
+          <div
+            id="left-panel"
+            class="hidden md:block md:w-2/5 bg-gradient-to-br from-indigo-500 to-purple-500 p-10 text-white"
+          >
+            <div class="flex flex-col justify-between h-full">
+              <div>
+                <h2 id="left-panel-heading" class="text-3xl font-bold mb-4">
+                  Welcome!
+                </h2>
+                <p id="left-panel-subheading" class="mb-8">
+                  Create an account to access exclusive features and content.
+                </p>
+              </div>
+              <div id="left-panel-features" class="space-y-4">
+                </div>
+            </div>
+          </div>
+
+          <div class="md:w-3/5 p-8">
+            <div
+              class="flex items-center justify-between bg-gray-50 p-4 rounded-lg mb-6"
+            >
+              <div>
+                <div class="font-medium text-gray-800">
+                  Register as an Organization?
+                </div>
+                <p class="text-sm text-gray-600">
+                  Toggle to switch between user and organization registration.
+                </p>
+              </div>
+              <label class="relative inline-block w-12 h-6">
+                <input
+                  type="checkbox"
+                  id="organizationToggle"
+                  class="opacity-0 w-0 h-0 peer"
+                  aria-label="Toggle between user and organization registration"
+                />
+                <span
+                  class="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-300 rounded-full transition-colors duration-300 peer-checked:bg-indigo-500"
+                ></span>
+                <span
+                  class="absolute h-5 w-5 left-0.5 bottom-0.5 bg-white rounded-full transition-transform duration-300 transform peer-checked:translate-x-full peer-checked:bg-white"
+                ></span>
+              </label>
+            </div>
+
+            <div id="userForm" class="block">
+              <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">
+                Register Yourself
+              </h2>
+
+              <div class="text-center mb-6">
+                <div class="relative inline-block">
+                  <img
+                    id="userAvatarPreview"
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                    alt="Avatar"
+                    class="mx-auto h-24 w-24 rounded-full object-cover border-4 border-white shadow-lg"
+                  />
+                  <label
+                    for="userAvatarUpload"
+                    class="absolute bottom-0 right-2 bg-white rounded-full p-2 shadow-md cursor-pointer"
+                  >
+                    <i class="fas fa-camera text-indigo-500"></i>
+                  </label>
+                  <input
+                    type="file"
+                    id="userAvatarUpload"
+                    accept="image/*"
+                    class="hidden"
+                  />
+                </div>
+              </div>
+
+              <form class="space-y-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >First Name</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="text"
+                        placeholder="John"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-user absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Last Name</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="text"
+                        placeholder="Doe"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-user absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Username</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="text"
+                        placeholder="johndoe"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-at absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Email</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="email"
+                        placeholder="john@example.com"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-envelope absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Phone Number</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="tel"
+                        placeholder="123-456-7890"
+                        maxlength="11"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-phone absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Address</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="text"
+                        placeholder="123 Main St, City"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-home absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Password</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="password"
+                        placeholder="••••••••"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-lock absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Confirm Password</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="password"
+                        placeholder="••••••••"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-lock absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <input
+                    id="userTerms"
+                    type="checkbox"
+                    class="mt-1 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                  />
+                  <label
+                    for="userTerms"
+                    class="ml-3 text-sm font-light text-gray-700"
+                  >
+                    I accept the
+                    <a href="#" class="text-indigo-600 hover:underline"
+                      >Terms and Conditions</a
+                    >
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full py-3.5 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-purple-500 hover:to-indigo-500 text-white font-medium rounded-lg transition duration-300 shadow-lg"
+                >
+                  Create Account
+                </button>
+
+                <div class="text-center text-sm text-gray-600 mt-4">
+                  Already have an account?
+                  <a
+                    href="#"
+                    class="font-medium text-indigo-600 hover:underline"
+                    >Sign in</a
+                  >
+                </div>
+              </form>
+            </div>
+
+            <div id="organizationForm" class="hidden">
+              <h2 class="text-2xl font-bold text-gray-800 text-center mb-8">
+                Organization Details
+              </h2>
+
+              <div class="text-center mb-6">
+                <div class="relative inline-block">
+                  <img
+                    id="orgLogoPreview"
+                    src="https://via.placeholder.com/150"
+                    alt="Organization Logo"
+                    class="mx-auto h-24 w-24 rounded-full object-cover border-4 border-white shadow-lg"
+                  />
+                  <label
+                    for="orgLogoUpload"
+                    class="absolute bottom-0 right-2 bg-white rounded-full p-2 shadow-md cursor-pointer"
+                  >
+                    <i class="fas fa-camera text-indigo-500"></i>
+                  </label>
+                  <input
+                    type="file"
+                    id="orgLogoUpload"
+                    accept="image/*"
+                    class="hidden"
+                  />
+                </div>
+              </div>
+
+              <form class="space-y-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Organization Name</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="text"
+                        placeholder="Your Organization"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-building absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Website URL</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="url"
+                        placeholder="https://example.com"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-link absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-5">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Address Line 1</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="123 Main St"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Address Line 2 (Optional)</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="Suite 200"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Phone Number</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="tel"
+                        placeholder="123-456-7890"
+                        maxlength="11"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-phone absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Email</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="email"
+                        placeholder="org@example.com"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-envelope absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1"
+                    >Description</label
+                  >
+                  <textarea
+                    placeholder="Brief description of your organization..."
+                    rows="3"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                  ></textarea>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Password</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="password"
+                        placeholder="••••••••"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-lock absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1"
+                      >Confirm Password</label
+                    >
+                    <div class="relative">
+                      <input
+                        type="password"
+                        placeholder="••••••••"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                      />
+                      <i
+                        class="fas fa-lock absolute right-3 top-3 text-gray-400"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <input
+                    id="orgTerms"
+                    type="checkbox"
+                    class="mt-1 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                  />
+                  <label
+                    for="orgTerms"
+                    class="ml-3 text-sm font-light text-gray-700"
+                  >
+                    I accept the
+                    <a href="#" class="text-indigo-600 hover:underline"
+                      >Terms and Conditions</a
+                    >
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full py-3.5 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-purple-500 hover:to-indigo-500 text-white font-medium rounded-lg transition duration-300 shadow-lg"
+                >
+                  Register Organization
+                </button>
+
+                <div class="text-center text-sm text-gray-600 mt-4">
+                  Already have an account?
+                  <a
+                    href="#"
+                    class="font-medium text-indigo-600 hover:underline"
+                    >Sign in</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center text-gray-500 text-sm mt-8">
+        © 2023 YourBrand. All rights reserved.
+      </div>
+    </div>
+
+    <script>
+      const organizationToggle = document.getElementById('organizationToggle');
+      const userForm = document.getElementById('userForm');
+      const organizationForm = document.getElementById('organizationForm');
+      const mainHeading = document.getElementById('main-heading');
+      const subHeading = document.getElementById('sub-heading');
+      const leftPanelHeading = document.getElementById('left-panel-heading');
+      const leftPanelSubheading = document.getElementById('left-panel-subheading');
+      const leftPanelFeatures = document.getElementById('left-panel-features');
+
+      // Function to update left panel content for User
+      function updateUserLeftPanel() {
+        leftPanelHeading.textContent = 'Welcome!';
+        leftPanelSubheading.textContent = 'Create an account to access exclusive features and content.';
+        leftPanelFeatures.innerHTML = `
+          <div class="flex items-center">
+            <div class="bg-white bg-opacity-20 rounded-full p-2 mr-3">
+              <i class="fas fa-shield-alt text-white"></i>
+            </div>
+            <span>Secure and encrypted data</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-white bg-opacity-20 rounded-full p-2 mr-3">
+              <i class="fas fa-bolt text-white"></i>
+            </div>
+            <span>Fast and easy registration</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-white bg-opacity-20 rounded-full p-2 mr-3">
+              <i class="fas fa-headset text-white"></i>
+            </div>
+            <span>24/7 customer support</span>
+          </div>
+        `;
+      }
+
+      // Function to update left panel content for Organization
+      function updateOrganizationLeftPanel() {
+        leftPanelHeading.textContent = 'Welcome!';
+        leftPanelSubheading.textContent = 'Register your organization to access exclusive features and content.';
+        leftPanelFeatures.innerHTML = `
+          <div class="flex items-center">
+            <div class="bg-white bg-opacity-20 rounded-full p-2 mr-3">
+              <i class="fas fa-building text-white"></i>
+            </div>
+            <span>Professional organization profiles</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-white bg-opacity-20 rounded-full p-2 mr-3">
+              <i class="fas fa-link text-white"></i>
+            </div>
+            <span>Link your organization's website</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-white bg-opacity-20 rounded-full p-2 mr-3">
+              <i class="fas fa-bullhorn text-white"></i>
+            </div>
+            <span>Promote your services and events</span>
+          </div>
+        `;
+      }
+
+      // Initial state: User form is visible and left panel updated
+      userForm.classList.remove('hidden');
+      organizationForm.classList.add('hidden');
+      updateUserLeftPanel();
+
+      // Event listener for the toggle switch
+      organizationToggle.addEventListener('change', function () {
+        if (this.checked) {
+          // Switch to Organization registration
+          userForm.classList.add('hidden');
+          organizationForm.classList.remove('hidden');
+          mainHeading.textContent = 'Register Your Organization';
+          subHeading.textContent = 'Create an organization profile to get started';
+          updateOrganizationLeftPanel();
+        } else {
+          // Switch to User registration
+          organizationForm.classList.add('hidden');
+          userForm.classList.remove('hidden');
+          mainHeading.textContent = 'Create Your Account';
+          subHeading.textContent = 'Join our community and start your journey with us today';
+          updateUserLeftPanel();
+        }
+      });
+
+      // Handle image uploads for User Avatar (optional UX improvement)
+      const userAvatarUpload = document.getElementById('userAvatarUpload');
+      const userAvatarPreview = document.getElementById('userAvatarPreview');
+      userAvatarUpload.addEventListener('change', function(event) {
+        if (event.target.files && event.target.files[0]) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            userAvatarPreview.src = e.target.result;
+          };
+          reader.readAsDataURL(event.target.files[0]);
+        }
+      });
+
+      // Handle image uploads for Organization Logo (optional UX improvement)
+      const orgLogoUpload = document.getElementById('orgLogoUpload');
+      const orgLogoPreview = document.getElementById('orgLogoPreview');
+      orgLogoUpload.addEventListener('change', function(event) {
+        if (event.target.files && event.target.files[0]) {
+          const reader = new FileReader();
+          reader.onload = function(e) {
+            orgLogoPreview.src = e.target.result;
+          };
+          reader.readAsDataURL(event.target.files[0]);
+        }
+      });
+    </script>
+  </body>
+</html>
